@@ -28,3 +28,6 @@ to clone a particular repo
 		run this command : git clone https://github.com/Manis7733/Learning_devops.git
 
 to take the changes done in remote repo to our working local dir : git pull origin main
+to take the changes done in remote repo to .git folder then to the working dir : git fetch origin main #fetches the changes made into .git folder
+													   git merge #combines the file in .git folder with our working dir/file
+
