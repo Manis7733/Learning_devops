@@ -1,0 +1,30 @@
+create a file: hello.py
+
+intialize the git(version control system): git init
+
+check the status of our working: git status
+
+to add any particular file in the git staging area : git add [filename with extension]
+or to add all the files in dir : git add .
+
+to connect our local workspace with our remote repo : git remote add origin https://github.com/Manis7733/Learning_devops.git
+	2nd step : git branch -M master
+		3rd step : git push -u origin master
+
+to push the local file/files to remote repo:
+	1: git add [file name]
+	   git add [file name1] [file name2]
+	   git add .
+	2: git commit -m "[commit message]" #only the added branches are commited
+	3: git push #only the commited files are pushed
+
+to see all the usefull configuration information: git config --list
+	in that we have to initiate username and email (if not already present)
+		commands to do so : git config --global user.name= 
+					  git config --global user.email= 
+
+to clone a particular repo
+	open the dir CMD where you want to copy the clone
+		run this command : git clone https://github.com/Manis7733/Learning_devops.git
+
+to take the changes done in remote repo to our working local dir : git pull origin main
