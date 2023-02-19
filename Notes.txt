@@ -33,7 +33,7 @@ to take the changes done in remote repo to .git folder then to the working dir :
 
 to commit directly without adding it to staging phase : git commit -am "[commit message]"
 
-to revert the file in local workspace if it is staged then use : git reset HEAD [filename]
+to revert the file in local workspace if it is staged then use : git restore --staged [filename]
 						  if it is note staged the use : git checkout -- [filename]
 
 when commiting or pushing some files if you want to purposly ignore some files just create .gitignore file (if not already created) and paste the dir/file you want to ignore
@@ -41,4 +41,6 @@ when commiting or pushing some files if you want to purposly ignore some files j
 		then commit the added files : git commit -m "[commiting comment]"
 			then push the local workspace to remote repo : git push origin main
 	(files we mentioned in the .gitignore file will be ignored by the git)
+
+to see difference of the files between the workspace and stagged file : git diff
 
