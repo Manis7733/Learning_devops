@@ -44,3 +44,23 @@ when commiting or pushing some files if you want to purposly ignore some files j
 
 to see difference of the files between the workspace and stagged file : git diff
 
+to view all the log of commits done : git log
+						  git log -2
+	to view the logs of particular author : git log --author=[authorname]
+	to view all the log  of commits with the changes done : git log -p
+
+to view the list of branch : git branch
+	to create new branch : git branch [new branch name]
+	to switch to new branch : git checkout [existing branch name]
+	to delete an existing branch : git branch -d [name of the branch]
+
+to merge the changes we did in newfeature(or anyother branch) to the main branch : git merge [branchname]
+
+to save a feature for the future and not use it now : git stash
+	changes in a file needed in future may be saved in stash and use it later 
+	now to retrive that feature in your file we use : git stash apply [index of the feature you want to apply]
+	to add a stash with custom comment message : git stash push -m "[your custom message]"
+	to view the list of stash we created : git stash list
+	to remove a stash from the stash container : git stash drop [index of the stash you want to drop]
+
+if we do edits in some other branch and commits it, and now we open MAIN branch and want to apply that commit to our main branch we do : git cherry-pick [commit id of that commit done by ]
